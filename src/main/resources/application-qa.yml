@@ -1,0 +1,6 @@
+server:
+  port: 8008
+
+springdoc:
+  api-docs:
+    enabled: false

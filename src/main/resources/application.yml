@@ -1,0 +1,17 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: productMicroService
+  profiles:
+    active: dev
+
+#logging:
+#    file: D:/Workspace/Develop/elk/microservices/product/product.log
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

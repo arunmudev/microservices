@@ -1,0 +1,39 @@
+springdoc:
+  api-docs:
+    enabled: true
+
+  # Data source:
+spring:
+    cache:
+      cache-names: testcache
+      type: ehcache
+    datasource:
+#      url: jdbc:postgresql://localhost:5432/product_microservice
+#      username: postgres
+#      password: root
+      url: jdbc:postgresql://${DB_HOST}/${DB_NAME}?useSSL=false
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+      driver-class-name: org.postgresql.Driver
+    jp:
+      show-sql: true
+    jpa:
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQL9Dialect
+    mvc:
+      pathmatch:
+        matching-strategy: ANT_PATH_MATCHER
+#logging:
+#  file:
+#    name: D:/Workspace/Develop/elk/microservices/product.log
+
+elasticsearch:
+  cluster: elasticsearch
+  host: localhost
+  port: 9200
+  username: elastic
+  password: FjjI1JvLZ7VmCz=dS*VD
+

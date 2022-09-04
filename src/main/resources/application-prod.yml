@@ -1,0 +1,6 @@
+springdoc:
+  api-docs:
+    enabled: false
+
+logging:
+    file: D:/Workspace/Develop/elk/microservices/product/product.log
