@@ -14,7 +14,7 @@
 	<name>product-service</name>
 	<description>product micro service</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>1.8</java.version>
 		<spring-cloud.version>2021.0.3</spring-cloud.version>
 	</properties>
 	<dependencies>
@@ -132,6 +132,14 @@
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>
 			</plugin>
+			<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
 		</plugins>
 	</build>
 
